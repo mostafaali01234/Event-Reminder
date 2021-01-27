@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(120deg, #5f57d1, #c065c0);
+}
+
+::placeholder {
+    color: rgb(179, 179, 179);
+}
+
+/* h1 */
+
+.title {
+    margin: 30px;
+    color: white;
+}
+
+/* container */
+
+.todo-body {
+    margin: 30px auto 0;
+    width: 800px;
+    text-align: center;
+}
+
+.todo-body p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+/* input box */
+
+.todo-body .add-box {
+    padding: 15px;
+}
+
+.todo-body .add-box input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(54, 53, 53, 0.3);
+    width: 70%;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+}
+
+/* Submit Button */
+
+.todo-body .plus {
+    display: inline-block;
+    width: 200px;
+    background-color: #5f57d1;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 28px;
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-body .plus:hover {
+
+    background-color: #c065c0;
+    color: white;
+}
+
+/* tasks body */
+
+.todo-body .tasks-list {
+    padding: 15px;
+}
+
+.todo-body .tasks-list>span {
+    display: block;
+    background-color: #FFF;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Delete  */
+
+.todo-body .tasks-list .taskBox .delete {
+    float: right;
+    background-color: #E91E63;
+    padding: 10px 10px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-body .tasks-list .taskBox .delete:hover {
+    background-color: #6b0000;
+}
+
+/* Date  */
+
+.todo-body .tasks-list .taskBox .myDate {
+    background-image: linear-gradient(120deg, #5f57d1, #c065c0);
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: white;
+    float: right;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+
+.todo-body .tasks-list .taskBox .myDate span {
+    color: rgb(179, 179, 179);
+    font-size: 10px;
+}
